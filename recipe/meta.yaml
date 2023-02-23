@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - cupy
-    - xarray
+    - xarray >=0.19
 
 test:
   # Skip `import` as it requires loading `libcuda.so`, which is not present.
