@@ -3,11 +3,15 @@ About cupy-xarray-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cupy-xarray-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/cupy-xarray/
+Home: https://github.com/xarray-contrib/cupy-xarray
 
 Package license: Apache-2.0
 
 Summary: Interface for using cupy in xarray, providing convenience accessors.
+
+Development: https://github.com/xarray-contrib/cupy-xarray
+
+Documentation: https://cupy-xarray.readthedocs.io
 
 Current build status
 ====================
@@ -147,4 +151,5 @@ Feedstock Maintainers
 * [@dcherian](https://github.com/dcherian/)
 * [@jacobtomlinson](https://github.com/jacobtomlinson/)
 * [@jakirkham](https://github.com/jakirkham/)
+* [@weiji14](https://github.com/weiji14/)
 
