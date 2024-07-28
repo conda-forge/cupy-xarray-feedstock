@@ -35,7 +35,9 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/cupy-xarray/
+  home: https://github.com/xarray-contrib/cupy-xarray
+  doc_url: https://cupy-xarray.readthedocs.io
+  dev_url: https://github.com/xarray-contrib/cupy-xarray
   summary: Interface for using cupy in xarray, providing convenience accessors.
   license: Apache-2.0
   license_file:
