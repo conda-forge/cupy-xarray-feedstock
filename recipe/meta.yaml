@@ -16,12 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
     - pip
+    - python >=3.8
+    - setuptools
+    - versioneer
   run:
-    - python >=3.7
     - cupy
-    - xarray >=0.19
+    - python >=3.8
+    - xarray >=2024.02.0
 
 test:
   imports:
