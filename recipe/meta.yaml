@@ -24,12 +24,12 @@ requirements:
     - xarray >=0.19
 
 test:
-  # Skip `import` as it requires loading `libcuda.so`, which is not present.
-  # imports:
-  #   - cupy_xarray
+  imports:
+    - cupy_xarray
   commands:
     - pip check
   requires:
+    - cupy-core
     - pip
 
 about:
