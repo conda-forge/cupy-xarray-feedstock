@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 3a0793efb90892bb56c7b5cc6d609732ee5d523169dd4925d76c372fffeababc
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - versioneer
   run:
     - cupy
-    - python >=3.8
+    - python >={{ python_min }}
     - xarray >=2024.02.0
 
 test:
@@ -33,6 +33,7 @@ test:
   requires:
     - cupy-core
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/xarray-contrib/cupy-xarray
