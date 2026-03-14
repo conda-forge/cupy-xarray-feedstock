@@ -11,7 +11,7 @@ Summary: Interface for using cupy in xarray, providing convenience accessors.
 
 Development: https://github.com/xarray-contrib/cupy-xarray
 
-Documentation: https://cupy-xarray.readthedocs.io
+Documentation: https://cupy-xarray.readthedocs.io/
 
 Current build status
 ====================
