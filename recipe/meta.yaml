@@ -1,5 +1,5 @@
 {% set name = "cupy-xarray" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3a0793efb90892bb56c7b5cc6d609732ee5d523169dd4925d76c372fffeababc
+  sha256: 87ed31c49fb538f793c6ded8ecb6bd056bafe02e17dc686551b945e26f64c2e4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
